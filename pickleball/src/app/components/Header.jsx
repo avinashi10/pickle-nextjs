@@ -4,19 +4,20 @@ import Image from 'next/image';
 
 // LOCAL IMPORTS
 import NavigationBar from './NavigationBar.jsx';
-import logo from '../logo.png';
+import logo from '../PickleballLogo.png';
 
 const Header = ()=>{
   return (
-    <div className="flex justify-between items-center p-4 w-full">
+    <div className="flex justify-between items-center p-1 w-full">
       <Link href="/">
-        <Image
-          src={logo}
-          alt="Logo"
-          width={50}
-          height={50}
-        />
+        <div className="w-48 sm:w-32 md:w-24 lg:w-16">
+          <Image
+            src={logo}
+            alt="Logo"
+          />
+        </div>
       </Link>
+      <h1>Pickleball With Dar</h1>
       <NavigationBar />
     </div>
   )
