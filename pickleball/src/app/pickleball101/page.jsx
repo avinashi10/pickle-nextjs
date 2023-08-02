@@ -1,8 +1,12 @@
-import React from 'react';
+// LOCAL IMPORTS
+import Header from '../components/Header.jsx';
 
 const Pickleball101 = ()=>{
   return (
-    <div>Pickleball 101</div>
+    <div>
+    <Header />
+    <h1> Pickleball 101 </h1>
+  </div>
   )
 }
 

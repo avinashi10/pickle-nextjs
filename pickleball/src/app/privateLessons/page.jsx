@@ -1,8 +1,12 @@
-import React from 'react';
+// LOCAL IMPORTS
+import Header from '../components/Header.jsx';
 
 const PrivateLessons = ()=>{
   return (
-    <div>Private Lessons</div>
+    <div>
+    <Header />
+    <h1> Private Lessons </h1>
+  </div>
   )
 }
 

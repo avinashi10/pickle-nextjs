@@ -1,11 +1,14 @@
 // LIBRARY IMPORTS
-import React from 'react';
 
 // LOCAL IMPORTS
+import Header from '../components/Header.jsx';
 
 const OpenPlay = ()=>{
   return (
-    <div>Open Play Schedule</div>
+    <div>
+      <Header />
+      <h1> Open Play Schedule </h1>
+    </div>
   )
 }
 
