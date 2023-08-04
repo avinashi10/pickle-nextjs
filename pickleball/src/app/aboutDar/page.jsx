@@ -7,13 +7,24 @@ import { EnvelopeIcon } from '@heroicons/react/24/solid';
 // LOCAL IMPORTS
 import Header from '../components/Header.jsx';
 import logo from '../images/PickleballLogo.png';
+import backgroundImage from '../images/landingPage.png';
 
 const AboutDar = ()=>{
   return (
     <div
     className="bg-cover bg-center w-full h-screen flex flex-col justify-between items-center"
-    style={{ backgroundImage: `url('../images/landingPage.png')` }}
     >
+      <Image
+        alt="Mountains"
+        src={backgroundImage}
+        placeholder="blur"
+        quality={100}
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: 'cover',
+        }}
+      />
       <nav className="w-full flex justify-between items-center p-5">
         <Link href="/">
           <div className="w-48 sm:w-32 md:w-24 lg:w-16">
