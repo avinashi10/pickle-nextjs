@@ -19,7 +19,7 @@ const NavigationBar = () => {
   return (
     <Menu as="nav" className="p-2 flex justify-end items-center">
       <div className="relative">
-        <Menu.Button className="h-6 w-6 z-10">
+        <Menu.Button className="h-6 w-6 z-10 text-custom-light">
           <Bars3Icon />
         </Menu.Button>
         <Transition
