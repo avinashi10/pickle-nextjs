@@ -12,20 +12,22 @@ import backgroundImage from '../images/landingPage.png';
 const AboutDar = ()=>{
   return (
     <div
-    className="bg-cover bg-center w-full h-screen flex flex-col justify-between items-center"
+    className="relative w-full h-screen flex flex-col justify-between items-center"
     >
-      <Image
-        alt="Mountains"
-        src={backgroundImage}
-        placeholder="blur"
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
-      />
-      <nav className="w-full flex justify-between items-center p-5">
+      <div className="absolute inset-0 -z-1">
+        <Image
+          alt="Mountains"
+          src={backgroundImage}
+          placeholder="blur"
+          quality={100}
+          layout="fill"
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+      <nav className="relative w-full flex justify-between items-center p-5 z-10">
         <Link href="/">
           <div className="w-48 sm:w-32 md:w-24 lg:w-16">
             <Image
@@ -47,13 +49,13 @@ const AboutDar = ()=>{
         <EnvelopeIcon className="h-6 w-6 text-white" />
       </nav>
 
-      <div className="text-center">
+      <div className="relative text-center z-10">
         <p className="text-8xl">Pickleball</p>
         <p className="text-4xl">to the</p>
         <p className="text-8xl">People</p>
       </div>
 
-      <button className="w-3/4 py-4 bg-transparent border border-white rounded-full text-white font-bold mb-10 hover:bg-white hover:text-black">
+      <button className="relative w-3/4 py-4 bg-transparent border border-white rounded-full text-white font-bold mb-10 hover:bg-white hover:text-black z-10">
         Start Playing Now
       </button>
     </div>
