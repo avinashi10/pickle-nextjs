@@ -40,22 +40,22 @@ const AboutDar = ()=>{
           {['Pickleball 101', 'Open Play', 'Private Lessons', 'About Darlene'].map((item, index) => (
             <button
               key={index}
-              className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-transparent border border-transparent rounded-md hover:bg-white hover:text-black"
+              className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-black bg-transparent border border-transparent rounded-md hover:bg-black hover:text-white"
             >
               {item}
             </button>
           ))}
         </div>
-        <EnvelopeIcon className="h-6 w-6 text-white" />
+        <EnvelopeIcon className="h-6 w-6 text-black" />
       </nav>
 
       <div className="relative text-center z-10">
-        <p className="text-8xl">Pickleball</p>
-        <p className="text-4xl">to the</p>
-        <p className="text-8xl">People</p>
+        <p className="text-8xl text-black">Pickleball</p>
+        <p className="text-4xl text-black">to the</p>
+        <p className="text-8xl text-black">People</p>
       </div>
 
-      <button className="relative w-3/4 py-4 bg-transparent border border-white rounded-full text-white font-bold mb-10 hover:bg-white hover:text-black z-10">
+      <button className="relative w-3/4 py-4 bg-transparent border border-black rounded-full text-black font-bold mb-10 hover:bg-black hover:text-white z-10">
         Start Playing Now
       </button>
     </div>
