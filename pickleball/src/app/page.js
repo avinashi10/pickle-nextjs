@@ -1,6 +1,6 @@
 // LIBRARY IMPORTS
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
 
 // LOCAL IMPORTS

@@ -1,6 +1,6 @@
 // LIBRARY IMPORTS
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 // LOCAL IMPORTS
 import NavigationBar from './NavigationBar.jsx';
