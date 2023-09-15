@@ -16,7 +16,7 @@ const AboutDar = ()=>{
     >
       <div className="absolute inset-0 -z-1">
         <Image
-          alt="Mountains"
+          alt="Person holding pickleball and paddle"
           src={backgroundImage}
           placeholder="blur"
           quality={100}
@@ -24,6 +24,7 @@ const AboutDar = ()=>{
           sizes="100vw"
           style={{
             objectFit: 'cover',
+            objectPosition: "top"
           }}
         />
       </div>
